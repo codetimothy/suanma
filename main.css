@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #234;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  font-family: Lato;
+}
+
+form {
+  width: 400px;
+}
+
+label {
+  display: inline-block;
+  padding-block: 0.8rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+input {
+  font-size: inherit;
+  width: 100%;
+  color: #f1f1f1;
+  outline: none;
+  display: block;
+/*   margin: 0; */
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 3px 3px 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #8c8c8c;
+  background-color: transparent;
+  transition: border-color 0.2s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: right 2% center;
+  background-size: 2rem 2rem;
+}
+
+input:focus {
+  border-color: #37c625;
+}
+
+input[aria-valid="false"] {
+  border-color: #de4437;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgZmlsbD0nbm9uZScgc3Ryb2tlPScjZGU0NDM3JyB2aWV3Qm94PScwIDAgMTIgMTInPjxjaXJjbGUgY3g9JzYnIGN5PSc2JyByPSc0LjUnLz48cGF0aCBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBkPSdNNS44IDMuNmguNEw2IDYuNXonLz48Y2lyY2xlIGN4PSc2JyBjeT0nOC4yJyByPScuNicgZmlsbD0nI2RlNDQzNycgc3Ryb2tlPSdub25lJy8+PC9zdmc+');
+}
+
+input[aria-valid="true"] {
+  border-color: #37c625;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnIHZpZXdCb3g9JzAgMCA4IDgnPjxwYXRoIGZpbGw9JyMzN0M2MjUnIGQ9J00yLjMgNi43M0wuNiA0LjUzYy0uNC0xLjA0LjQ2LTEuNCAxLjEtLjhsMS4xIDEuNCAzLjQtMy44Yy42LS42MyAxLjYtLjI3IDEuMi43bC00IDQuNmMtLjQzLjUtLjguNC0xLjEuMXonLz48L3N2Zz4=');
+}
+
+.form-control {
+  margin-top: 50px;
+}
+
+button {
+    /* 文字颜色 */
+    color: #0099CC; 
+    /* 清除背景色 */
+    background: transparent; 
+    /* 边框样式、颜色、宽度 */
+    border: 2px solid #0099CC;
+    /* 给边框添加圆角 */
+    border-radius: 6px; 
+    /* 字母转大写 */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+/* 悬停样式 */
+.btn1:hover {
+    background-color: #008CBA;
+    color: white;
+}
